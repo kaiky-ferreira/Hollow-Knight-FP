@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um arquivo de fã sobre Hallownest, suas ruínas, personagens e mistérios.">
+  <title>Hallownest // Arquivo do Vazio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Hallownest, início">
+      <span class="brand-mark">✦</span>
+      <span>hallownest<span class="brand-slash">/</span>arquivo</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="#reino">O reino</a>
+      <a href="#habitantes">Habitantes</a>
+      <a href="#diario">Diário</a>
+    </nav>
+    <button class="icon-button menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span>
+    </button>
+    <button class="mode-toggle" type="button" aria-label="Alternar atmosfera da página" title="Alternar atmosfera">
+      <span class="mode-dot"></span><span>atmosfera</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> um arquivo não oficial de hallownest</p>
+        <h1 id="hero-title">Onde a luz<br><em>não alcança.</em></h1>
+        <p class="hero-intro">Sob a terra, um reino esquecido ainda respira. Caminhe por suas ruínas, escute seus ecos e descubra o que permanece quando todos partem.</p>
+        <a class="text-link" href="#reino">Entrar nas ruínas <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração abstrata de uma caverna subterrânea" role="img">
+        <div class="moon-orb"></div>
+        <div class="hero-arch hero-arch-back"></div>
+        <div class="hero-arch hero-arch-front"></div>
+        <div class="hero-knight"><span class="horn horn-left"></span><span class="horn horn-right"></span><span class="mask-eye eye-left"></span><span class="mask-eye eye-right"></span></div>
+        <div class="floating-sigil">⟡</div>
+      </div>
+      <div class="hero-meta">
+        <span>01 / 05</span>
+        <span class="scroll-note">deslize para descer <b>↓</b></span>
+        <span>© team cherry // fã site</span>
+      </div>
+    </section>
+
+    <section class="realm-section section-shell" id="reino" aria-labelledby="realm-title">
+      <div class="section-heading">
+        <p class="eyebrow">cartografia do silêncio</p>
+        <h2 id="realm-title">Um reino em<br><em>camadas.</em></h2>
+      </div>
+      <div class="realm-grid">
+        <div class="realm-copy">
+          <p class="large-copy">Hallownest não é um lugar que se visita. É um lugar que se <em>desenterra.</em></p>
+          <p>Do brilho azulado das Encruzilhadas aos jardins esquecidos da Rainha, cada caminho guarda uma memória que não quer ser encontrada.</p>
+          <a class="text-link" href="#diario">Abrir o diário <span>↗</span></a>
+        </div>
+        <div class="map-frame" aria-label="Mapa estilizado de Hallownest">
+          <div class="map-grid-lines"></div>
+          <span class="map-route route-a"></span><span class="map-route route-b"></span><span class="map-route route-c"></span>
+          <span class="map-node node-1"><i></i><b>Encruzilhadas</b></span>
+          <span class="map-node node-2"><i></i><b>Cidade das Lágrimas</b></span>
+          <span class="map-node node-3"><i></i><b>Jardins da Rainha</b></span>
+          <span class="map-node node-4"><i></i><b>Abismo</b></span>
+          <span class="map-label">H A L L O W N E S T</span>
+          <div class="map-crest">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inhabitants-section section-shell" id="habitantes" aria-labelledby="inhabitants-title">
+      <div class="section-topline">
+        <div>
+          <p class="eyebrow">registros encontrados</p>
+          <h2 id="inhabitants-title">Vozes do<br><em>subsolo.</em></h2>
+        </div>
+        <div class="filter-buttons" role="group" aria-label="Filtrar habitantes">
+          <button class="filter-button active" type="button" data-filter="all">todos</button>
+          <button class="filter-button" type="button" data-filter="aliado">aliados</button>
+          <button class="filter-button" type="button" data-filter="lenda">lendas</button>
+        </div>
+      </div>
+      <div class="character-grid">
+        <article class="character-card" data-category="lenda">
+          <div class="character-image knight-image"><span class="character-symbol">✦</span></div>
+          <div class="character-info"><span class="card-index">01 — lenda</span><h3>O Cavaleiro</h3><p>Pequeno recipiente, grande vazio.</p><a href="#diario" aria-label="Ler sobre O Cavaleiro">↗</a></div>
+        </article>
+        <article class="character-card" data-category="aliado">
+          <div class="character-image hornet-image"><span class="character-symbol">⌁</span></div>
+          <div class="character-info"><span class="card-index">02 — aliada</span><h3>Hornet</h3><p>Protege o que não pode falar.</p><a href="#diario" aria-label="Ler sobre Hornet">↗</a></div>
+        </article>
+        <article class="character-card" data-category="aliado">
+          <div class="character-image quirrel-image"><span class="character-symbol">◒</span></div>
+          <div class="character-info"><span class="card-index">03 — aliado</span><h3>Quirrel</h3><p>Um viajante sem mapa.</p><a href="#diario" aria-label="Ler sobre Quirrel">↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="diary-section section-shell" id="diario" aria-labelledby="diary-title">
+      <div class="diary-mark">✦</div>
+      <div class="diary-content">
+        <p class="eyebrow">fragmento 08 // transmissão interrompida</p>
+        <h2 id="diary-title">“Não há fim<br>para o <em>vazio.</em>”</h2>
+        <p>Alguns segredos só aparecem quando o reino está quieto. Volte quando a última luz se apagar.</p>
+        <button class="essence-button" type="button" id="essence-button"><span class="button-orb"></span> coletar essência <strong id="essence-count">000</strong></button>
+      </div>
+      <div class="diary-stamp">arquivo<br>selado</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>hallownest / arquivo</span><span>feito por fãs, para quem ainda escuta os ecos</span><span>voltar ao topo <a href="#top">↑</a></span>
+  </footer>
+</body>
+</html>
